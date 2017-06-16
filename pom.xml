@@ -28,7 +28,7 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://10.128.0.8:8081/repository/maven-releases/<url>
+            <url>http://10.128.0.8:8081/repository/maven-releases</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
