@@ -24,6 +24,7 @@
         </configuration>
       </plugin>
     </plugins>
+  </build>
    <distributionManagement>
         <repository>
             <id>deployment</id>
@@ -36,7 +37,6 @@
             <url>http://10.128.0.8:8081/repository/maven-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-  </build>
   <dependencies>
   	<dependency>
   		<groupId>javax.servlet</groupId>
