@@ -32,7 +32,7 @@ div.ex {
 					<td><input type="text" name="age"/></td>
 				</tr>
 				<tr>
-					<td>Qualification</td>
+					<td>Student Qualification</td>
 					<td><input type="text" name="qual"/></td>
 				</tr>
 				<tr>
