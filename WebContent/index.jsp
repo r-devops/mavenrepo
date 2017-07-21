@@ -20,7 +20,7 @@ div.ex {
 		<form action="registrationController" method="post">
 			<table style="with: 50%">
 				<tr>
-					<td>Student Name</td>
+					<td>Student Full Name</td>
 					<td><input type="text" name="fullname"/></td>
 				</tr>
 				<tr>
