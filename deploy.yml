@@ -1,0 +1,11 @@
+- name: Deploy student app in PROD
+  hosts: all
+  become: yes
+  tasks:
+    - name: Remove the old war files
+      file:
+        name: "/opt/apache-tomcat-9.0.1/webapps/{{item}}"
+        state: absent
+      with_items:
+        - student
+        - student.war
