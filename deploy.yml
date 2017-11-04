@@ -11,7 +11,7 @@
       with_items:
         - student
         - student.war
-	- name: Download Warfile
-	  get_url:
-		url: "{{URL}}"
-		dest: /opt/apache-tomcat-9.0.1/webapps/student.war
+    - name: Download war file
+      get_url:
+        url: "{{URL}}"
+        dest: /opt/apache-tomcat-9.0.1/webapps/student.war
