@@ -29,7 +29,7 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://10.128.0.10:8081/repository/student-rel/</url>
+            <url>http://54.224.246.223:8081/repository/maven-second/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
