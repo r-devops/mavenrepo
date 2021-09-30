@@ -2,7 +2,7 @@
 
 ### Remove old war files
 rm -rf /tomcat/test/webapps/student*
-
+## hello Ram
 ### Copy the war file
 cp /var/lib/jenkins/workspace/sample-test1/target/student*.war /tomcat/test/webapps/student.war
 
