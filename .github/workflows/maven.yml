@@ -23,4 +23,12 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: |
+           mvn -B package --file pom.xml
+           mkdir atrifacts && cp target/* .jar artifacts 
+           cd artifacts && ls 
+    - name: save artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: github-actions-artifact
+        path: artifact 
