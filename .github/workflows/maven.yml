@@ -23,12 +23,12 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: |
-           mvn -B package --file pom.xml
-           mkdir atrifacts && cp target/* .jar artifact 
-           cd artifacts && ls 
-    - name: save artifacts
-      uses: actions/upload-artifact@v2
+      run:  mvn -B package --file pom.xml
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v2.1.0
       with:
-        name: github-actions-artifact
-        path: artifact 
+   # Artifact name
+         name: github-actions-artifact 
+    # Destination path
+         path: artifacts 
+           
