@@ -24,11 +24,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run:  mvn -B package --file pom.xml
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v2.1.0
-      with:
-   # Artifact name
-         name: github-actions-artifact 
-    # Destination path
-         path: artifacts 
-           
+    - run: mkdir staging && cp target/*.jar staging
+    - uses: actions/upload-artifact@v2
+    with:
+      name: Package
+      path: staging
