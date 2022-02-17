@@ -4,7 +4,7 @@ name: Main
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
     
 env:
   MFE_NAME: "Vijay"
