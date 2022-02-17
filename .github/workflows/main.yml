@@ -50,16 +50,16 @@ jobs:
    #   - name: Check format
    #     run: |
    #       npm run prettier
-      - name: Check linting
-        run: |
-          npm run lint
+  #    - name: Check linting
+  #      run: |
+  #        npm run lint
       
-      - name: Build Package
-        run: |
-          git status
-          npm run-script build
+ #     - name: Build Package
+  #      run: 
+   #       git status
+   #      npm run build
           
       - name: Tar the vijay.tar build folder, manifest.json, and env.ejs template
         run: |
-          tar -cvf $MFE_NAME.tar build public/manifest.json -C .github/envs/ env.ejs
+          tar -cvf $MFE_NAME.tar pom.xml deploy-for-test.sh
           ls -ltr
