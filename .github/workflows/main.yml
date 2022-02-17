@@ -47,9 +47,9 @@ jobs:
          # npm config set _auth="$NPM_AUTH"
           npm install
           
-      - name: Check format
-        run: |
-          npm run prettier
+   #   - name: Check format
+   #     run: |
+   #       npm run prettier
       - name: Check linting
         run: |
           npm run lint
@@ -62,3 +62,4 @@ jobs:
       - name: Tar the vijay.tar build folder, manifest.json, and env.ejs template
         run: |
           tar -cvf $MFE_NAME.tar build public/manifest.json -C .github/envs/ env.ejs
+          ls -ltr
