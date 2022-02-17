@@ -9,6 +9,6 @@ jobs:
     name: Pass input and secrets to my-action
     runs-on: ubuntu-latest
     steps:
-      - uses: 
+      - uses: rajkumarvijay/mavenrepo/blob/master/.github/workflows/main.yml
         with:
           MFE_NAME: Gopi
