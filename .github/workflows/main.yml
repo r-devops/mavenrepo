@@ -15,15 +15,15 @@ jobs:
   release:
     name: Release ${{ github.event.inputs.type }} version
     runs-on: ubuntu-latest
-    env:
-      RELEASE_TOKEN: ${{ secrets.EXEC_TM_ESNTL_DEPLOYMENTS_PAT }}
+   # env:
+    #  RELEASE_TOKEN: ${{ secrets.EXEC_TM_ESNTL_DEPLOYMENTS_PAT }}
 
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          token: ${{ env.RELEASE_TOKEN }}
+        #  token: ${{ env.RELEASE_TOKEN }}
 
       - name: Set git credentials
         uses: fregante/setup-git-user@v1
