@@ -44,4 +44,8 @@
   		<version>3.0.1</version>
   	</dependency>
   </dependencies>
+  <properties>
+    <sonar.host.url>http://52.66.248.127:9000/</sonar.host.url>
+    <sonar.login>d65faf736f6deb98ca7520064836b06d2ad26f62</sonar.login>
+  </properties>    
 </project>
