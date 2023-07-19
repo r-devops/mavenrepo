@@ -1,6 +1,6 @@
 pipeline 
 {
-    agent{ label 'dev-slave'}
+    agent{ label 'jenkins-slave-1'}
     
     triggers
 	{
