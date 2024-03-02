@@ -23,9 +23,22 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
-    </plugins>
+       <!-- Add SonarQube Maven plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.10.0.2594</version>
+            </plugin>
+         </plugins>
   </build>
-   <distributionManagement>
+<!-- Add SonarQube configuration properties -->
+    <properties>
+        <!-- SonarQube server URL -->
+        <sonar.host.url>http://http://3.142.46.235:9000</sonar.host.url>
+              <!-- Authentication token (if required) -->
+        <!-- <sonar.login>sqa_9e475ab6cc0341d1c250fc69205f8e21a150d757</sonar.login> -->
+      </properties>
+  <distributionManagement>
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
